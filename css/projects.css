@@ -1,0 +1,123 @@
+
+.section-title > h4 {
+    font-size: 1.75em;
+    font-weight: bold;
+    color: var(--second-color)
+}
+
+.main-container {
+    --width-content: 900px;
+    width: 100%;
+    align: center !important;
+    margin-top: 1em;
+}
+
+.card {
+    background-color: var(--background-color) !important;
+}
+
+.projects-container {
+
+}
+
+.btn:active, .btn:focus, .btn:active {
+    background-image: none !important;
+    outline: 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    transform: translateX(0px) !important;
+    transform: translateY(0px) !important;
+}
+
+.projects {
+    width: 900px;
+    margin: auto;
+    text-align: left;
+}
+
+.projects-intro {
+    font-size: 14pt;
+    text-align: justify;
+}
+
+.project_unit {
+    margin-top: 2em;
+}
+
+.collapsing-section{
+    width:100%;
+    background-color: transparent !important;  
+    border-color: transparent !important;
+    color: var(--second-color) !important;
+    padding-left: 0px !important;
+    font-size:1.2em !important;
+    text-align: left !important;
+}
+
+.collapsing-section:hover, .img-collapse:hover {
+    color: var(--second-color-dark) !important;
+    transition-duration: 1s !important;
+    transform: translateY(0px) !important;
+}
+
+.rotate90.on {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition-duration: 0.2s !important;
+}
+
+.rotate90 {
+    -webkit-transition: 200ms linear all;
+    -moz-transition: 200ms linear all;
+    -o-transition: 200ms linear all;
+    transition: 200ms linear all;  
+}
+
+.card {
+    border: none !important;
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+}
+
+.extensionslinks { 
+    width: 100%;
+    margin-top:  5%;
+}
+
+.extpic {
+    width:40%;
+    height: auto;
+}
+
+.ext-single-proj {
+    padding-top: 1.5em;
+}
+
+.ext-single-link {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.vrar-single-proj {
+    padding-top: 1.5em;
+}
+
+.vrarlinks {
+    width: 100%;
+    margin-top:  5%;
+}
+
+.vrar-single-link {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.vrarpic {
+    width:80%;
+    height: auto;
+}

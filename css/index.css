@@ -1,0 +1,48 @@
+// Place all the styles related to the Main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.aboutme-container {
+    --width-content: 900px;
+    width: 100%;
+    align:center !important;
+    margin-top: 1em;
+}
+
+.bio-photo {
+    width: var(--width-content);
+    height: 40%;
+    margin: 0 auto;
+}
+
+.mypicture {
+    width: 25%;
+    margin-right: 5%;
+    height: auto;
+    border-radius: 50%;
+    float:left;
+    margin-top: 1em;
+}
+
+.section-title {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.section-title > h4 {
+    font-size: 1.75em;
+    font-weight: bold;
+    color: var(--second-color)
+}
+
+.aboutme {
+    width: 70%;
+    float:left;
+}
+
+.bio {
+    font-size: 14pt;
+    //text-align: justify;
+}
+

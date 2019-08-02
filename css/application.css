@@ -1,0 +1,268 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import "index";
+@import "projects";
+@import "research";
+
+// Custom bootstrap variables must be set or imported *before* bootstrap
+@import "bootstrap";
+// Import font-awesome icons
+@import "font-awesome";
+// Import font
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap');
+
+.light-theme {
+     /* LIGHT THEME */
+    --second-color: rgba(238, 50, 50, 1);
+    --second-color-dark: rgba(180, 40, 40, 1);
+    --primary-color: rgba(210, 210, 210, 1);
+    --primary-color-dark: rgba(150, 150, 150, 1);
+    --primary-text-color: rgba(0, 0, 0, 1);
+    --background-color: rgba(256,256,256,1);  
+}
+
+.dark-theme {
+    /* DARK THEME */
+    --second-color: rgba(238, 50, 50, 1);
+    --second-color-dark: rgba(180, 40, 40, 1);
+    --primary-color: rgba(85, 67, 62, 1);
+    --primary-color-dark: rgba(45, 37, 35, 1);
+    --primary-text-color: rgba(180, 180, 180, 1);
+    --background-color: rgba(65,55,50,1); 
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color:var(--primary-text-color);
+    background-color: var(--background-color);
+    //font-family: 'PT Sans Narrow', sans-serif;
+}
+
+a {
+  color: var(--second-color);
+}
+
+a:hover {
+  color: var(--second-color-dark);
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+// navbar top for all pages
+.navbar {
+    background-color: var(--primary-color) !important;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    box-shadow: 0 0 6px var(--second-color-dark);
+    z-index: 90;
+}
+
+.navbar-nav {
+    text-align: left; 
+}
+
+.navbar-nav > li{
+    padding-left:0.4em;
+    padding-right:0.4em;
+    font-size: 1em;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke-width='2' stroke='rgba(238, 50, 50, 1)' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+  border-color: var(--second-color) !important;
+  float: right !important;
+} 
+
+.nav-link {
+    color: var(--primary-text-color) !important;
+    vertical-align: baseline;
+    padding-bottom: 0em;
+}
+
+.nav-link:hover {
+    color: var(--second-color-dark) !important;
+    //border-bottom: 0.03em solid var(--second-color-dark);
+    transition-duration: 0.3s;
+}
+
+.nav-link:visited, .nav-link:focus, .nav-link:active {
+    outline: none;
+    border: none;
+    -moz-outline-style: none;
+    transform: translateY(2px);
+}
+
+.navbar-brand {
+    color: var(--second-color) !important;
+    font-size: 1.7em;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.navbar-brand:hover {
+    color: var(--second-color-dark) !important;
+    transition-duration: 0.3s;
+    text-decoration: none;    
+}
+
+.navbar-brand:visited, .navbar-brand:focus, .navbar-brand:active {
+    outline: none;
+    border: none;
+    -moz-outline-style: none;
+}
+
+.brand-title {
+    color: var(--second-color) !important;
+    padding-top: 0.5em;
+    font-weight: bold;
+    font-size: 2.8em;
+    border-top: 0.2em solid var(--secondary-color);
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.brand-title > a:hover {
+    color: var(--second-color-dark) !important;
+    transition-duration: 0.3s;
+    text-decoration: none;    
+}
+
+.brand-title > a:visited, a:focus, a:active {
+    outline: none;
+    border: none;
+    -moz-outline-style: none;
+}
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+// footer for all pages
+
+footer {
+     background-color: var(--primary-color);
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     box-shadow: 0 0 6px var(--second-color-dark);
+     width:100%;
+}
+
+.footer-copyright {
+    background-color: var(--primary-color-dark);
+    height: 2em;
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
+    font-size: 0.9em;
+}
+
+.container-copyright {
+   text-align:center; 
+}
+
+.container-social {
+    height: 3em;
+    text-align: center;
+}
+
+.py-5 {
+    padding-top:0.6em !important;
+}
+
+.fa {
+    color: var(--second-color) !important;
+    margin: auto !important; 
+    margin-left:10% !important;
+    margin-right:10% !important;
+}
+
+.fa:hover {
+  color: var(--second-color-dark) !important;
+  transition-duration: 0.3s;
+}
+
+.row {
+    text-align: center;
+}
+
+.mb-5 {
+    margin:auto;
+    text-align:center !important;
+}
+
+.icons-cont {
+    margin-left: 0px;
+    width: 5% !important;
+    display: inline-block;
+    margin:auto !important;
+    align:center !important;
+    padding-left:5% !important;
+    padding-right:8% !important;
+}
+
+.theme-switcher {
+    font-size: 11pt !important;
+    color: var(--second-color) !important;
+    padding-left: 10px !important;
+    overflow: visible !important;
+}
+
+.theme-switcher:hover {
+    color: var(--second-color-dark) !important;
+    transition-duration: 0.3s !important;
+    cursor:pointer !important;
+}
+
+.theme-switcher:active {
+    transform: translateY(1px) !important;
+    transition-duration: 0.3s !important;
+}
+
+// main div style for all pages
+
+.main-container {
+    display: inline-block;
+    padding-top: 8em;
+    padding-bottom: 6em;
+}
+
+.col-md-1 {
+    width: 10% !important;
+    //overflow-x: auto !important;
+}
+
+.col-md-10 {
+    width: 80% !important;
+    //overflow-x: auto py-3 {
+    height:2em;
+}    
+
+.theme-link:hover {
+    cursor: pointer !important;
+}

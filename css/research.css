@@ -1,0 +1,37 @@
+
+.section-title > h4 {
+    font-size: 1.75em;
+    font-weight: bold;
+    color: var(--second-color)
+}
+
+.main-container {
+    --width-content: 900px;
+    width: 100%;
+    align: center !important;
+    margin-top: 1em;
+}
+
+.research-container {
+}
+
+.research {
+    width: 900px;
+    margin: auto;
+}
+
+.research-intro {
+    font-size: 14pt;
+    text-align: justify;
+}
+
+.publication {
+    margin-top: 2em;
+    padding-left: 1em;
+}
+
+.pub-title {
+    font-weight: bold;
+    color: var(--second-color);
+}
+
